@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+select,
+input[type="date"],
+input[type="number"],
+input[type="text"],
+input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+button[type="submit"] {
+  background-color: #ff2e63;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #ff4d6a;
+}
+
+@media screen and (max-width: 768px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+}
+
+    </style>
+</head>
+<body class="mov">
+    <header>
+        <div id="logo">
+            <img src="logo.png" alt="logo">
+        </div>
+        <nav>
+            <a class="bar fi"href="Home.html">Home</a>
+            <a class="bar" href="./Movies.html">Movies</a>
+            <a class="bar" href="Booking.html">Book Tickets</a>
+            <a class="bar la" href="Compare.html">Compare</a>
+        </nav>
+        <div id="search"><input placeholder="Search"/></div>
+    </header>
+    <div class="container">
+        <h1>Book Your Movie Ticket</h1>
+        <form>
+          <div class="form-group">
+            <label for="movie">Select Movie</label>
+            <select id="movie" name="movie">
+              <option value="avengers-endgame">Avengers: Endgame</option>
+              <option value="black-panther">Black Panther</option>
+              <option value="joker">Joker</option>
+              <option value="spider-man">Spider-Man: Far From Home</option>
+              <option value="star-wars">Star Wars: The Rise of Skywalker</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <label for="date">Select Date</label>
+            <input type="date" id="date" name="date">
+          </div>
+      
+          <div class="form-group">
+            <label for="time">Select Time</label>
+            <select id="time" name="time">
+              <option value="12pm">12:00 PM</option>
+              <option value="3pm">3:00 PM</option>
+              <option value="6pm">6:00 PM</option>
+              <option value="9pm">9:00 PM</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <label for="seats">Select Seats</label>
+            <input type="number" id="seats" name="seats" min="1" max="10">
+          </div>
+      
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+          </div>
+      
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+          </div>
+      
+          <button type="submit">Book Now</button>
+        </form>
+      </div>
+
+      <footer>
+        <div class="footer-container">
+          <div class="contact-us">
+            <h3>Contact Us</h3>
+            <p>123 Cine Point Street</p>
+            <p> Abbottabad, 90001</p>
+            <p>Phone: 555-1234</p>
+            <p>Email: info@cinepoint.com</p>
+          </div>
+    
+          <div class="follow-us">
+            <h3>Follow Us</h3>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+    
+         
+        </div>
+     <div class="newsletter">
+            <h3>Newsletter</h3>
+            <p>Subscribe to our newsletter to get the latest updates and promotions.</p>
+            <form>
+              <input type="email" placeholder="Enter your email address">
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        <div class="copyright">
+          <p>&copy; 2023 Cine Point. All rights reserved.</p>
+        </div>
+      </footer>
+      
+</body>
+</html>
